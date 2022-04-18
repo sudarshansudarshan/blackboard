@@ -1,5 +1,24 @@
 import random
+import math
 
+
+def is_prime(n):
+    '''Given the input number n, the program checks if the number is prime or
+    not. If it is prime, it returns 1, otherwise returns 0'''
+    flag=1
+    for i in range(2,int(n**.5)):
+        if n%i==0:
+            flag=0
+            break
+    return flag
+
+def count_primes_less_than(n):
+    '''This will count the number of primes less than n'''
+    count=0
+    for i in range(2,n):
+        if (is_prime(i))==1:
+            count=count+1
+    return count
 
 def factorial(n):
     answer=1
