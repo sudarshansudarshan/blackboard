@@ -20,6 +20,17 @@ def count_primes_less_than(n):
             count=count+1
     return count
 
+def experiment(n):
+    '''Create a list of numbers upto n in steps of 100 and append the final
+    answer to a list and return the list. The list L will contain elements such
+    as (alpha, number_of_primes_less_than_alpha)'''
+    L=[]
+    for i in range(n//100):
+        k=i*100
+        L.append((k,count_primes_less_than(k)))
+    return L
+
+
 def factorial(n):
     answer=1
     for i in range(n):
