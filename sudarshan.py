@@ -5,8 +5,8 @@ def disp(m,n):
     This code will type all possible numbers of the form (i,j) ranging from (0,0)
     to (9,4)
     '''
-    for i in range(10):
-        for j in range(5):
+    for i in range(m):
+        for j in range(n):
             print("(",i,j,")",end="")
 
 
