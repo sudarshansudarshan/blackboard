@@ -41,7 +41,7 @@ def factorial(n):
 def disp(m,n):
     '''
     This code will type all possible numbers of the form (i,j) ranging from (0,0)
-    to (9,4)
+    to (m-1,n-1)
     '''
     L=[]
     for i in range(m):
