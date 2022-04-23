@@ -7,6 +7,13 @@ def sort_list(L):
     L.sort() #this is cheating. :)
     return L
 
+def populate(L,k):
+    '''This code extends the list L by k random elements'''
+    for i in range(k):
+        L.append(random.randint(1,10000000))
+    return L
+
+
 def element_remove(L,x):
     '''Remove the element x in L and return the resulting list'''
     for i in range(len(L)): #go till the end of the list
@@ -33,7 +40,14 @@ def naive():
         print("0: I-nsert an element")
         print("1: D-elete an element")
         print("2: L-ookup for an element")
+        print("3: Print L")
+        print("4: Extend L by k elements")
+
         d=int(input())
+        if (d==4):
+            print("Enter a value for k, by which you want to extend L")
+            k=int(input())
+            L=populate(L,k)
         if (d==3):
             print(L)
         if (d==0):
