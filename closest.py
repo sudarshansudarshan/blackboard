@@ -16,6 +16,7 @@ def populate(L,k):
 
 def element_remove(L,x):
     '''Remove the element x in L and return the resulting list'''
+    n=len(L)
     for i in range(len(L)): #go till the end of the list
             if L[i]==x:     #until you find your x. The moment you find your x
                 for j in range(i,n-1): #shift all elements by one unit to the
