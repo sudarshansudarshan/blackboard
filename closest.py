@@ -5,6 +5,15 @@ def sort_list(L):
 
 def element_remove(L,x):
     '''Remove the element x in L and return the resulting list'''
+    for i in range(len(L)): #go till the end of the list
+            if L[i]==x:     #until you find your x. The moment you find your x
+                for j in range(i,n-1): #shift all elements by one unit to the
+                    #right and ensure that x is deleted this way.
+                    L[j]==L[j+1]
+                L.pop()#This removes the last elment in the list. Note that
+                #L[second last]==L[last]. We dont want this.
+                break
+
 
 def naive():
     '''We check if --->
