@@ -1,6 +1,8 @@
+#Make this run faster.
+#Superman!
 import random
 import pdb
-pdb.set_trace()
+#pdb.set_trace()
 
 def sort_list(L):
     '''Sorts the element of L'''
@@ -10,7 +12,7 @@ def sort_list(L):
 def populate(L,k):
     '''This code extends the list L by k random elements'''
     for i in range(k):
-        L.append(random.randint(1,10000000))
+        L.append(random.randint(1000000000,9999999999))
     return L
 
 
@@ -73,6 +75,4 @@ def naive():
                     break
             if flag==0:
                 print("Element not found")
-
-
 naive()
