@@ -1,7 +1,11 @@
 import random
+import pdb
+pdb.set_trace()
 
 def sort_list(L):
     '''Sorts the element of L'''
+    L.sort() #this is cheating. :)
+    return L
 
 def element_remove(L,x):
     '''Remove the element x in L and return the resulting list'''
@@ -20,6 +24,7 @@ def naive():
     0: x is present or not
     1: insert x
     2: delete x if it is present
+    3: Display the list L
     d
     '''
     L=[]
@@ -29,6 +34,8 @@ def naive():
         print("1: D-elete an element")
         print("2: L-ookup for an element")
         d=int(input())
+        if (d==3):
+            print(L)
         if (d==0):
             print("Enter the element x which needs to be inserted")
             x=int(input())     
@@ -51,3 +58,6 @@ def naive():
                     break
             if flag==0:
                 print("Element not found")
+
+
+naive()
