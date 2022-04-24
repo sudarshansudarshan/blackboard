@@ -26,7 +26,7 @@ def find_continous(L):
             if total>maximum:
                 maximum=total
                 ans=(i,j,total)
-    return i,j,total
+    return ans
     
 
     
