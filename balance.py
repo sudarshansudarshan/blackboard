@@ -22,7 +22,8 @@ def balance(U):
     return L_mean,R_mean,diff
 
 U=generate(100)
-print(balance(U))
+for i in range(20):
+    print(balance(U))
 
 
 
