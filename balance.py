@@ -21,9 +21,14 @@ def balance(U):
     diff=abs(L_mean-R_mean)
     return L_mean,R_mean,diff
 
+ref=1000
 U=generate(100)
-for i in range(20):
-    print(balance(U))
+for i in range(10000):
+    l,r,d=(balance(U))
+    if d<ref:
+        ref=d
+        print(i,l,r,d)
+
 
 
 
