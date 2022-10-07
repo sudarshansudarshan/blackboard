@@ -23,6 +23,10 @@ My favourite quote happens to be:
 - Avoid eating doughnuts with my friends.
 
 # Heading2
-
+|  Sl. no. | Name  | Phone number  | City   |  Remarks |
+|---|---|---|---|---|
+|   1|Sudarshan   |89172034   | Mysore   | South Indian  |
+|   2|Sheetal   |  0989234 |Rupnagar   | West Indian   |
+|   3|Ashu   |  123423423 |Delhi   | Middle Indian   |
 
 # Heading3
