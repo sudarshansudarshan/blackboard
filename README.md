@@ -16,6 +16,12 @@ My favourite quote happens to be:
 5. Yoga
 10. Sleep on time.
 
+## My not-todolist
+
+- Avoid Coffee/tea in the evening
+- Avoid watching TV after 10 pm
+- Avoid eating doughnuts with my friends.
+
 # Heading2
 
 
